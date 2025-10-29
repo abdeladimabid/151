@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script-obf.js"></script>
+
+  <title>INSPECT QUEST: SECURE VAULT</title>
+</head>
+<body>
+  <div class="container">
+    <h1>INSPECT QUEST: SECURE VAULT</h1>
+    <p><strong>OBJECTIVE:</strong> Crack the login using <em>HINTS</em>. scattered on the website.</p>
+    <p>Find the correct username and password via clues, bugs and informations scattered on the website.</p>
+
+    <!-- VAULT LOGIN -->
+    <div class="vault">
+      <h2>SECURE ACCESS PANEL</h2>
+      <input type="text" id="username" placeholder="Username" autocomplete="off" />
+      <input type="password" id="password" placeholder="Password" autocomplete="off" />
+      <button id="loginBtn" onclick="attemptLogin()">ACCESS VAULT</button>
+      <p id="loginStatus"></p>
+    </div>
+
+    <!-- &#x73;&#x65;&#x63;&#x6f;&#x6e;&#x64;&#x5f;&#x70;&#x61;&#x72;&#x74;&#x20;&#x69;&#x73;&#x20;&#x2e;&#x2e;&#x2e;&#x24;&#x6d;&#x30;&#x2e;&#x2e;&#x2e; -->
+
+    <button onclick="clickMe()">Click Me!</button>
+    <div class="tooltip">Hover for CSS flag</div>
+
+    <p class="fake-flag">FLAG{obvious_fake_123}</p>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+         data-flag="FLAG{exif_data_digger}" width="1" height="1">
+    <div class="tracking-pixel"></div>
+    <hr>
+    <p id="status">Initializing secure channel...</p>
+
+    <!-- binary DOC -->
+    <div id="binary-doc" class="binary-doc">
+      <h2>binary Clue Unlocked!</h2>
+      <button onclick="downloadBinary()">Download binary-victory.txt</button>
+    </div>
+  </div>
+
+  <!-- VICTORY OVERLAY -->
+  <div id="victoryOverlay">
+    <canvas id="matrixRain"></canvas>
+    <div class="victory-text">ACCESS GRANTED</div>
+    <div class="victory-subtext">CONGRATS PLAYER {GenZDevs data leaked}</div>
+  </div>
+
+
+  <script>
+  /*  
+  //Set cookie Remember me that expires in 1 hour if user is admin 
+
+    if (user == "SuperAdminAbid" || role == "admin" ) {
+      const name = "remember_me";
+      const value = "null";
+      const oneHourFromNow = new Date(Date.now() + 60 * 60 * 1000).toUTCString();
+      document.cookie = `${name}=${value}; expires=${oneHourFromNow}; path=/; SameSite=Strict`;
+      }
+  */
+  console.log("User Cookie value: " + getCookie("remember_me"));
+  </script>
+</body>
+</html>
