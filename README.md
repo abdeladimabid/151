@@ -8,6 +8,6 @@ Find the **username** and **password**.
 Enter them.  
 Win.
 
-[Open in browser → Click here to play](https://yourusername.github.io/inspect-quest-secure/)
+[Open in browser → Click here to play](https://abdeladimabid.github.io/151/)
 
 > *Hover. Inspect. Think. Hack.*
